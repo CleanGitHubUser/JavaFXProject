@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fatalvirus.controller.FXmain4Controller">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="파일">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#exitApp" text="프로그램 종료" >
+              <graphic>
+              	<ImageView>
+              	<image>
+              	<Image url = "/fatalvirus/icons/shut-down-icon-10r.png" />
+              	</image>
+              	</ImageView>
+              	</graphic> 
+              	</MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="수정">
+            <items>
+              <MenuItem mnemonicParsing="false" text="실행취소" />
+                  <MenuItem mnemonicParsing="false" text="다시실행" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="보기">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="도움말">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#openAbout" text="프로그램 정보" >
+              	<graphic>
+              	<ImageView>
+              	<image>
+              	<Image url = "/fatalvirus/icons/shut-down-icon-10.png" />
+              	</image>
+              	</ImageView>
+              	</graphic> 
+              </MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../icons/shut-down-icon.png" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>
